@@ -18,12 +18,15 @@ public class Pedido {
         this.itensPedido = new ArrayList<>();
 
     }
-    public void adicionarItem(){
+    public void adicionarItem(int codigo, int quantidade, double valor){
         ItemPedido item = new ItemPedido();
-        item.sequenciaItem =0;
-        item.codigoItem = 0;
-        item.quantidade = 0;
-        item.valor = 0;
+        item.sequenciaItem = this.itensPedido.size()+1;
+        item.codigoItem = codigo;
+        item.quantidade = quantidade;
+        item.valor = valor;
+
+        //adiciona o valor total do item no pedido
+        this.valor += item.quantidade * item.valor;
 
         this.itensPedido.add(item);
     }
