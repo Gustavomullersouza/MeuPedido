@@ -18,6 +18,14 @@ public class Pedido {
         this.itensPedido = new ArrayList<>();
 
     }
+    public void adicionarItem(){
+        ItemPedido item = new ItemPedido();
+        item.sequenciaItem =0;
+        item.codigoItem = 0;
+        item.quantidade = 0;
+        item.valor = 0;
 
+        this.itensPedido.add(item);
+    }
 
 }
