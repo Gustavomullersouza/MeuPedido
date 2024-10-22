@@ -14,8 +14,8 @@ public class Pedido {
     public void criarPedido(){
 
         this.numeroPedido = 1;
-        this.valor = 0;
-        this.itensPedido = new ArrayList<();
+        this.valor = 50;
+        this.itensPedido = new ArrayList<>();
 
     }
 

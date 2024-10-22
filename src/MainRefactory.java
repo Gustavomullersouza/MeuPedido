@@ -5,6 +5,8 @@ public class MainRefactory {
         Pedido novoPedido = new Pedido();
         novoPedido.criarPedido();
 
+        System.out.println(novoPedido.valor);
+
 
     }
 }
